@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 
 /* ── Data ────────────────────────────────────────────── */
 const QUICK_LINKS = [
@@ -110,12 +109,11 @@ export default function Footer() {
           {/* Column 1 — Brand */}
           <div>
             <Link href="/" className="mb-4 flex items-center gap-3">
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src="/images/KeyMetrics.png"
                 alt="Key Metrics Accounting"
-                width={40}
-                height={40}
-                className="rounded-lg"
+                style={{ height: "50px", width: "auto", objectFit: "contain" }}
               />
               <div className="leading-tight">
                 <span className="block text-lg font-bold text-brand">Key Metrics</span>
