@@ -108,17 +108,13 @@ export default function Footer() {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Column 1 — Brand */}
           <div>
-            <Link href="/" className="mb-4 flex items-center gap-3 notranslate">
+            <Link href="/" className="mb-4 block notranslate">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/KeyMetrics.png"
                 alt="Key Metrics Accounting"
-                style={{ height: "70px", width: "auto", objectFit: "contain" }}
+                style={{ height: "120px", width: "auto", objectFit: "contain" }}
               />
-              <div className="leading-tight">
-                <span className="block text-xl font-bold text-white">Key Metrics</span>
-                <span className="block text-sm tracking-wide text-brand">Accounting</span>
-              </div>
             </Link>
             <p className="mb-6 text-sm leading-relaxed text-footer-fg/80">
               Calgary&rsquo;s trusted accounting partner. We help individuals and businesses navigate

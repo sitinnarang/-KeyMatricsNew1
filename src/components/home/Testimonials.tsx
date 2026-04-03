@@ -87,12 +87,12 @@ const row2: Testimonial[] = [
 
 function TestimonialCard({ t }: { t: Testimonial }) {
   return (
-    <div className="inline-flex flex-shrink-0 w-[400px] mx-3">
-      <div className="bg-surface rounded-2xl border border-surface-border p-6 shadow-sm w-full">
+    <div className="inline-flex flex-shrink-0 w-[280px] sm:w-[320px] md:w-[400px] mx-3">
+      <div className="bg-surface rounded-2xl border border-surface-border p-4 sm:p-6 shadow-sm w-full h-full">
         <div className="text-[#2ed1cd] text-sm mb-3 tracking-wide">
           {"★".repeat(t.stars)}
         </div>
-        <blockquote className="text-gray-600 text-sm leading-relaxed mb-4">
+        <blockquote className="text-gray-600 text-sm leading-relaxed mb-4 whitespace-normal break-words overflow-hidden line-clamp-4">
           &ldquo;{t.quote}&rdquo;
         </blockquote>
         <div className="flex items-center gap-3">
@@ -102,9 +102,9 @@ function TestimonialCard({ t }: { t: Testimonial }) {
               .map((n) => n[0])
               .join("")}
           </div>
-          <div>
-            <p className="text-[#003c47] text-sm font-bold">{t.name}</p>
-            <p className="text-gray-400 text-xs">{t.role}</p>
+          <div className="whitespace-normal min-w-0">
+            <p className="text-[#003c47] text-sm font-bold truncate">{t.name}</p>
+            <p className="text-gray-400 text-xs truncate">{t.role}</p>
           </div>
         </div>
       </div>
