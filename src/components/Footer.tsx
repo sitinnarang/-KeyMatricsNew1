@@ -108,16 +108,16 @@ export default function Footer() {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Column 1 — Brand */}
           <div>
-            <Link href="/" className="mb-4 flex items-center gap-3">
+            <Link href="/" className="mb-4 flex items-center gap-3 notranslate">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/KeyMetrics.png"
                 alt="Key Metrics Accounting"
-                style={{ height: "50px", width: "auto", objectFit: "contain" }}
+                style={{ height: "70px", width: "auto", objectFit: "contain" }}
               />
               <div className="leading-tight">
-                <span className="block text-lg font-bold text-brand">Key Metrics</span>
-                <span className="block text-xs tracking-wide text-footer-fg/70">Accounting</span>
+                <span className="block text-xl font-bold text-white">Key Metrics</span>
+                <span className="block text-sm tracking-wide text-brand">Accounting</span>
               </div>
             </Link>
             <p className="mb-6 text-sm leading-relaxed text-footer-fg/80">

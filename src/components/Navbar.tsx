@@ -133,7 +133,7 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1 lg:px-8">
         {/* ── Logo ──────────────────────────────── */}
-        <Link href="/" className="flex items-center gap-3 shrink-0">
+        <Link href="/" className="flex items-center gap-3 shrink-0 notranslate">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/KeyMetrics.png"
